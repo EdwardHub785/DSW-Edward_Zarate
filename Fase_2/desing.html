@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2</title>
+    <link rel="stylesheet" href="/Fase_3/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <h1> Fundamentos de CSS, Frameworks CSS</h1>
+                        <!-- <img id="unad"
+                            src="https://www.grupolarabida.org/wp-content/uploads/2020/10/Colombia_UniversidadNacionalAbiertayaDistancia_UNAD_18_.jpg"
+                            alt="UNAD"> -->
+                    </li>
+                    <li>Inicio</li>
+                    <select name="temas" id="temas">
+                        <option value="titulo">Selecciona un Tema</option>
+                        <option value="tema_1">Tema 1</option>
+                        <option value="tema_2">Tema 2</option>
+                    </select>
+                    <select name="recursosDigitales" id="recursos">
+                        <option value="titulo">Recursos Digitales</option>
+                        <option value="recurso_1">Recurso 1</option>
+                        <option value="recurso_2">Recurso 2</option>
+                    </select>
+                    <select name="aprendizaje" id="aprendizaje">
+                        <option value="titulo">Aprendizaje</option>
+                        <option value="activiad_1">Actividad 1</option>
+                        <option value="activiada_2">Actividad 2</option>
+                    </select>
+                    <select name="autor" id="autor">
+                        <option value="acerca">Acerca de</option>
+                        <option value="autor">Edward Laiton Zarate</option>
+                    </select>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h2>Propósito del Sitio</h2>
+        <p>
+            Esta pagina esta pensada como un recurso para conocer cuales son las caracteristicas básicas de <em>CSS</em>
+            en su sintaxix y de como aplicarlas a un documento <em>HTML</em> con sus diferentes selectores y recursos.
+            <br> Tambien veremos los <em>Frameworks</em> más usados de <em>CSS</em> y sus aplicaciones.
+        </p>
+    </section>
+    <article>
+        <h3>FUNDAMENTOS DE CSS (Cascading Style Sheets u Hojas de Estilo en Cascada)</h3>
+        <p>
+            Es un lenguaje de programación muy parecido a HTML que permite aplicar estilos a los distintos elementos de
+            las páginas web, de modo que
+            los títulos, listas y párrafos pueden verse igual en todas y cada una de las páginas.
+        <h4> SINTAXIS BÁSICA DE CSS </h4>
+        Cada estilo CSS se compone de tres partes:
+        <ol>
+            <li>Un selector</li>
+            <li>Una propiedad</li>
+            <li>Un valor</li>
+        </ol>
+        <div>
+            Su sintaxis es: <br>
+            <strong><em>selector { propiedad : valor; }</em></strong><br><br>
+            <strong>Selector:</strong> Indica a qué etiqueta HTML se aplicará el estilo. <br><br>
+            <strong>Propiedad:</strong> Indica a qué propiedad de la etiqueta se aplicará el estilo, por ejemplo al
+            color de
+            fondo, al tamaño de la letra, etc. <br><br>
+            <strong>Valor:</strong> Valor de la propiedad, por ejemplo, el estilo: <strong><em>body { background-color :
+                    #FF0000; }</em></strong> aplicará el color
+            rojo al fondo de la página. <br><br>Se pueden definir propiedades múltiples, separándolas por punto y coma,
+            por
+            ejemplo: <strong><em> h2 { text-align : justify; color : blue;}</em></strong>.<br> Aplicará alineación
+            justificada y color azul a los textos de
+            encabezado de tipo h2.
+        </div>
+        <div>
+            <h3 style="text-align: center;">Selectores CSS - Universal, de tipo, clases, ID y avanzado</h3>
+            <div class="selectores" >
+                <p class="tipos">
+                    Cada instrucción contiene un selector que da formato a los tags de la página Web. Una indicación más
+                    sobre
+                    la sintaxis: formalmente, el área del selector finaliza en la llave de apertura de la declaración.
+
+                    Sin embargo, ¡el bloque de la declaración pertenece al selector! Por lo tanto, si quiere definir una
+                    instrucción momentánea sin necesidad de escribir valores y propiedades, el selector deberá ser al
+                    menos.
+
+                    h1 {}
+
+                    Las propiedades y valores se pueden añadir más tarde. Pero si escribe el selector sin las llaves,
+                    estará
+                    introduciendo un error en la hoja de estilo.
+
+                    Veamos ahora los diferentes tipos de selectores.
+                    Dominio y hosting para paginas web, hosting para correos corporativosAnunciate aquí
+                    Selectores CSS - Universal, de tipo, clases, ID y avanzado
+                    La primera parte de una instrucción CSS consta de un selector, que es el que crea la vinculación
+                    entre las
+                    instrucciones los elementos de la página. <br><br>
+                    <strong>Selectores CSS:</strong> <em>Universal, de tipo, clases, ID y avanzado</em> La primera parte
+                    de una
+                    instrucción CSS consta de un selector, que es el que crea la vinculación entre las instrucciones los
+                    elementos de la página
+                    Cada instrucción contiene un selector que da formato a los tags de la página Web. Una indicación más
+                    sobre
+                    la sintaxis: formalmente, el área del selector finaliza en la llave de apertura de la declaración.
+
+                    Sin embargo, ¡el bloque de la declaración pertenece al selector! Por lo tanto, si quiere definir una
+                    instrucción momentánea sin necesidad de escribir valores y propiedades, el selector deberá ser al
+                    menos.
+
+                    h1 {}
+
+                    Las propiedades y valores se pueden añadir más tarde. Pero si escribe el selector sin las llaves,
+                    estará
+                    introduciendo un error en la hoja de estilo.
+
+                    Veamos ahora los diferentes tipos de selectores.
+                </p>
+                <div class="universal" >
+                    <h3>Selector Universal</h3>
+                    <p>
+                        El selector universal sirve para seleccionar, con ayuda de un joker (el carácter *) cada
+                        elemento del árbol
+                        del documento y vincularlo con una instrucciones determinada. Una instrucción muy típica es la
+                        siguiente: <br><br>
+
+                        * {
+                        margin: 0;
+                        padding: 0;
+                        }<br>
+                        <br>
+                        Con esta instrucción se da el valor cero, por ejemplo, a las distancias de todos los elementos
+                        (*)
+                        predefinidas por el navegador.
+                        <img src="https://blog.hubspot.es/hubfs/media/ejemploselectoruniversalcss.png" alt="universal">
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+            <h3>Selector de elemento o de tipo</h3>
+            En nuestros ejemplos hemos visto ahora los selectores del tipo más sencillo, referidos siempre a un
+            determinado elemento HTML. La referencia se indica mediante la etiqueta, por ejemplo:
+
+            h1 {
+            color: #000033;
+            }
+
+            Para asignar a varios elementos las mismas propiedades, podemos formar un grupo con los selectores de
+            elemento correspondientes:
+
+            h1, h2, h3 {
+            color: #000033;
+            }
+
+            En este caso hemos asignado el color azul a los tres tipos de título. Observe que los selectores han de ir
+            separados mediante comas (,).
+
+            <h3>Selectores de clase</h3>
+            En el ejemplo anterior se ha asignado en bloque el color azul a todos los títulos. Supongamos ahora que nos
+            encontramos en una situación en que algunos de los títulos no tienen que ir en azul sino en rojo y
+            negrita como excepción. Para situarse así, CSS nos ofrece el selector de clase.
+
+            En primer lugar, asigne en el código HTML del título un atributo de clase propio (class=”..”).
+
+            class=”rojo-negrita”>Título rojo negrita
+
+            Ahora escribamos en la hoja de estilo la instrucción especial que ha de aplicarse a esa clase. Para
+            ello, sólo tiene que añadir el nombre de la clase al selector de elemento, separado mediante un punto
+            (.), sin espacios en blanco.
+
+            h2.rojo-negrita {
+            color: #330000;
+            font-weight: bold;
+            }
+            A partir de ahora que necesite un título rojo y negrita, sólo tiene que asignarle la clase rojo-negrita.
+            Incluso se puede ir más lejos. Si en algún momento dado se necesita de un título (o cualquier otro
+            elemento) en rojo y negrita no vincule la clase a ningún otro elemento concreto.
+
+            .rojo-negrita {
+            color: #330000;
+            font-weight: bold;
+            }
+            Escribiendo la instrucción así, podrá asignar la clase rojo negrita a cualquier etiqueta HTML, por
+            ejemplo:
+            class=”rojo-negrita”>Párrafo en rojo y negrita
+
+            Dominio y hosting para paginas web, hosting para correos corporativosAnunciate aquí
+            Selectores CSS - Universal, de tipo, clases, ID y avanzado
+            La primera parte de una instrucción CSS consta de un selector, que es el que crea la vinculación entre las
+            instrucciones los elementos de la página.
+
+            Profesor Hugo Delgado 22/08/2022 Aprender CSS 1 Comentario 42 Votos 15,264 Visitado
+            COMPÁRTELO:
+            Selectores CSS - Universal, de tipo, clases, ID y avanzado | Aprender CSS | La primera parte de una
+            instrucción CSS consta de un selector, que es el que crea la vinculación entre las instrucciones los
+            elementos de la página
+            Cada instrucción contiene un selector que da formato a los tags de la página Web. Una indicación más sobre
+            la sintaxis: formalmente, el área del selector finaliza en la llave de apertura de la declaración.
+
+            Sin embargo, ¡el bloque de la declaración pertenece al selector! Por lo tanto, si quiere definir una
+            instrucción momentánea sin necesidad de escribir valores y propiedades, el selector deberá ser al menos.
+
+            h1 {}
+
+            Las propiedades y valores se pueden añadir más tarde. Pero si escribe el selector sin las llaves, estará
+            introduciendo un error en la hoja de estilo.
+
+            Veamos ahora los diferentes tipos de selectores.
+
+            Selector Universal
+            El selector universal sirve para seleccionar, con ayuda de un joker (el carácter *) cada elemento del árbol
+            del documento y vincularlo con una instrucciones determinada. Una instrucción muy típica es la siguiente:
+
+            * {
+            margin: 0;
+            padding: 0;
+            }
+
+            Con esta instrucción se da el valor cero, por ejemplo, a las distancias de todos los elementos (*)
+            predefinidas por el navegador.
+
+            Selector de elemento o de tipo
+            En nuestros ejemplos hemos visto ahora los selectores del tipo más sencillo, referidos siempre a un
+            determinado elemento HTML. La referencia se indica mediante la etiqueta, por ejemplo:
+
+            h1 {
+            color: #000033;
+            }
+
+            Para asignar a varios elementos las mismas propiedades, podemos formar un grupo con los selectores de
+            elemento correspondientes:
+
+            h1, h2, h3 {
+            color: #000033;
+            }
+
+            En este caso hemos asignado el color azul a los tres tipos de título. Observe que los selectores han de ir
+            separados mediante comas (,).
+
+            Selectores de clase
+            En el ejemplo anterior se ha asignado en bloque el color azul a todos los títulos. Supongamos ahora que nos
+            encontramos en una situación en que algunos de los títulos<strong>h2</strong> no tienen que ir en azul sino
+            en rojo y
+            negrita como excepción. Para situarse así, CSS nos ofrece el selector de clase.
+
+            En primer lugar, asigne en el código HTML del título un atributo de clase propio (class=”..”).
+
+            <strong>h2 </strong> class=”rojo-negrita”>Título rojo negrita <strong> h2</strong>
+
+            Ahora escribamos en la hoja de estilo la instrucción especial que ha de aplicarse a esa clase. Para
+            ello, sólo tiene que añadir el nombre de la clase al selector de elemento, separado mediante un punto
+            (.), sin espacios en blanco.
+
+            h2.rojo-negrita {
+            color: #330000;
+            font-weight: bold;
+            }
+
+
+            A partir de ahora que necesite un título rojo y negrita, sólo tiene que asignarle la clase rojo-negrita.
+            Incluso se puede ir más lejos. Si en algún momento dado se necesita de un título <strong>h3</strong> (o
+            cualquier otro
+            elemento) en rojo y negrita no vincule la clase a ningún otro elemento concreto.
+
+            .rojo-negrita {
+            color: #330000;
+            font-weight: bold;
+            }
+
+
+            Escribiendo la instrucción así, podrá asignar la clase rojo negrita a cualquier etiqueta HTML, por
+            ejemplo:
+            <strong>p</strong> class=”rojo-negrita”>Párrafo en rojo y negrita<strong>p</strong>
+
+            <h3> Selectores ID</h3>
+            Los selectores ID le permiten asignar nombres significativos a elementos HTML concretos. A
+            diferencia de los selectores de clase, que sirven para un tipo de elementos (por ejemplo, todos los
+            elementos del tipo <strong>h1</strong> ) y que se pueden utilizar dentro de un documento todas las veces que
+            se
+            desee, los selectores ID se utilizan para un solo elemento (por ejemplo, un <strong>h1</strong>) y que se
+            pueden utilizar dentro de un documento todas las veces que se desee, los selectores ID se
+            utilizan para un solo elemento (por ejemplo <strong>h1</strong> concreto) y, por eso, sólo puede aparecer
+            una vez en el documento HTML.
+
+            <strong>h1</strong>id=”verde-negrita”>Título verde en negrita <strong>h1</strong>
+            La instrucción en CSS correspondiente será entonces así:
+
+            h1#verde-negrita {
+            color: #003300;
+            }
+
+            La sintaxis se parece a la del selector de clase, pero el atributo HTML es ahora id=”…”, y en la instrucción
+            de estilo se utiliza el carácter almohadilla (#) en lugar del punto (.) Aquí también se puede omitir la
+            definición del elemento (en este caso <strong>h1</strong> ) de modo que el selector puede aplicarse a
+            cualquier elemento.
+
+            #verde-negrita {
+            color: #003300
+            }
+
+            Recuerde siempre que los IDs sólo se pueden utilizar una vez en cada documento, por lo que resultan
+            especialmente apropiados para identificar contenedores de áreas de página, como por ejemplo cabeceras,
+            navegaciones, contenidos, pies y similares.
+
+            Los IDs también se pueden utilizar para acceder al elemento con un script (por ejemplo JavaScript o
+            PHP).
+            <h3>Selectores avanzados</h3>
+            En los grandes proyectos Web, con el tiempo se acaban acumulando una gran cantidad de formatos específicos
+            para los diversos documentos. El resultado, a menudo, es un código fuente plagado de clases de todo tipo
+            para cada página, por lo que al hacer modificaciones, o ajustes, es fácil pasar por alto algún detalle. Para
+            situaciones así lo más práctico es utilizar los selectores contextuales en las anotaciones de estilo.
+
+            <h3>Selector descendiente (descendant selectors)</h3>
+            Supongamos que tiene una página con todas las instrucciones de estilo y que quiere añadir un cuadro de
+            información especial con un color propio para algunos de los párrafos de texto.
+
+            El color definido para la escritura en general ha sido el negro. Por eso, hemos creado una clase especial
+            para este caso concreto: class=”rojo” y la hemos asignado a los correspondientes párrafos de texto:
+
+            <div id=”infoespecial”>
+                <p class=”rojo”>Texto habitual</p>
+                <p class=”rojo”>más texto</p>
+                <p class=”rojo”>más texto</p>
+            </div>
+
+            En sí, no sería correcto, pero inflamaríamos el código, tendríamos que escribir mucho más, y al final
+            perderíamos la perspectiva de tanta clase: las modificaciones y ajustes serían cada vez más complicadas y
+            susceptibles de error. En un caso así lo mejor es utilizar los selectores contextuales. En lugar de asignar
+            una clase, asignamos el formato de <strong>p</strong> en el contexto de su elemento inmediatamente superior.
+            Lo que en
+            nuestro ejemplo sería:
+
+            #infoespecial p {
+            color: #ff0000;
+            }
+
+            Eso significa que dentro del elemento con el ID #infoespecial (y sólo ahí) todos los
+            <strong>p</strong> tendrán el color rojo (#ff0000).
+
+            El código fuente permanece igual, sin ninguna clase especial:
+            <div id=”infoespecial”>
+                <p>Texto en general</p>
+                <p>más texto</p>
+                <p>más texto</p>
+            </div>
+
+            Los selectores descendientes se pueden incrustar en más niveles. Supongamos que ha definido el subrayado
+            para los vínculos que aparecen en el contexto de un elemento cuyo ID es #contenido:
+
+            #contenido a {
+            text-decoration: underline;
+            }
+
+            Supongamos que también necesita que aparezcan en una lista <strong>ul</strong>; pero sin subrayar. Lo que ha
+            de hacer es
+            añadir en la hoja de estilo:
+
+            #contenido ul a {
+            text-decoration: none;
+            }
+
+            Cuando los selectors tienen varios niveles de anidamiento, lo mejor es leerlos de atrás hacia adelante:
+
+            No se subrayarán los vínculos que aparezcan en una lista <strong>ul</strong> -pero sólo si la lista está
+            dentro de un
+            elemento con el ID #contenido
+
+            El código HTML correspondiente sería así:
+
+            <div id=”contenido”>
+                <p><a href=”foo.html”>Texto del vínculo</a></p>
+                <ul>
+                    <li>
+                        <a href="foot.html">Texto del vínculo</a>
+                    </li>
+                </ul>
+            </div>
+
+            El primer vínculo se subraya, el segundo no. Y tampoco aquí se necesita ninguna clase adicional.
+            Fijémonos brevemente en la relación de parentesco que aparece en el ejemplo que acabamos de ver:
+
+            #contenido ul a {…}
+
+            El elemento <strong>a</strong> es aquí hijo de <strong>ul</strong> y, por lo tanto, nieto de #contenido.
+            Pero al nieto sólo se
+            accede cuando su elemento padre es explícitamente un <strong>ul</strong>. Si quiere acceder al nieto en
+            cualquier caso, independientemente del tipo de padre, deberá escribir la instrucción de
+            la siguiente manera:
+
+            #contenido * a {…}
+
+            De ese modo, se accede a todos los <strong>a</strong> que sean nietos de #contenido, pero no cuando los
+            <strong>a</strong> son hijos de #contenido.
+
+            Naturalmente, también se pueden agrupar varios elementos juntamente con todos
+            sus descendientes para asignarles las mismas instrucciones a todos. Al hacerlo,
+            no obstante, deberá fijarse bien en escribir siempre el mismo selector:
+
+            #content h1, #content h2, #content h3 {
+            font-family: Georgia, serif;
+            font-size: italic;
+            }
+
+            Un error bastante frecuente es indicar el selector completo sólo en el primer
+            elemento:
+
+            #content h1, h2, h3 {
+            font-family: Georgia, serif;
+            font-style: italic;
+            }
+
+            Eso significaría que <strong>h2</strong> y <strong>h3</strong>también recibirían ese formato cuando aparecen
+            dentro del contenedor con el ID #content
+
+            Este tipo de escritura mantiene el código lo más reducido y claro
+            posible. Además, permite clasificar muy bien los diferentes bloques
+            dentro de la hoja de estilo y mantener así la visión de conjunto de los
+            formatos aplicados a cada elemento.
+
+            Existen muchos otros selectores contextuales que, por desgracia, no han
+            recibido gran soporte hasta ahora, especialmente por parte de IE.
+        </div>
+
+        <div class="frameworks">
+            <h4>Frameworks</h4>
+            <div class="imagenes">
+                <div class="bootstrap">
+                    <img class="img_1"
+                        src="https://serv3.raiolanetworks.es/blog/wp-content/uploads/bootstrap-social-share.png"
+                        alt="bootstrap">
+                    <div>
+                        Bootstrap es un framework CSS desarrollado por Twitter en 2010, para estandarizar las
+                        herramientas de la compañía.
+
+                        Inicialmente, se llamó Twitter Blueprint y, un poco más tarde, en 2011, se transformó en código
+                        abierto y su nombre cambió para Bootstrap. Desde entonces fue actualizado varias veces y ya se
+                        encuentra en la versión 4.4.
+
+                        El framework combina CSS y JavaScript para estilizar los elementos de una página HTML. Permite
+                        mucho más que, simplemente, cambiar el color de los botones y los enlaces.
+
+                        Esta es una herramienta que proporciona interactividad en la página, por lo que ofrece una serie
+                        de componentes que facilitan la comunicación con el usuario, como menús de navegación, controles
+                        de página, barras de progreso y más.
+
+                        Además de todas las características que ofrece el framework, su principal objetivo es permitir
+                        la construcción de sitios web responsive para dispositivos móviles.
+
+                        Esto significa que las páginas están diseñadas para funcionar en desktop, tablets y smartphones,
+                        de una manera muy simple y organizada.
+
+                        <h3>¿Cómo funciona Bootstrap?</h3>
+                        Bootstrap está constituido por una serie de archivos CSS y JavaScript responsables de asignar
+                        características específicas a los elementos de la página.
+
+                        Hay un archivo principal llamado bootstrap.css, que contiene una definición para todos los
+                        estilos utilizados. Básicamente, la estructura del framework se compone de dos directorios:
+
+                        css: contiene los archivos necesarios para la estilización de los elementos y una alternativa al
+                        tema original;
+                        js: contiene la parte posterior del archivo bootstrap.js (original y minificado), responsable de
+                        la ejecución de aplicaciones de estilo que requieren manipulación interactiva.
+                        Para asignarle una característica a un elemento, simplemente debemos informar la clase
+                        correspondiente en la propiedad “class” del elemento que será estilizado, como mostramos e el
+                        siguiente ejemplo:
+
+                        texto alternativo
+                        En este ejemplo, fue asignado el contenido "rounded-sm" para una propiedad de imagen. Es un
+                        estilo que agrega bordes redondeados y no un elemento.
+
+                        Por lo tanto, al cargar la imagen, se aplicarán al elemento las características que se refieren
+                        a esta clase.
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="https://cdn.dribbble.com/users/245331/screenshots/1974334/uikit.png" alt="uikit">
+                    <div>
+                        Es un repositorio de símbolos reutilizables que utilizaremos en nuestra interfaz (botones,
+                        widgets, checkboxes, input fields, etc). Este paquete de elementos aporta una rapidez increíble
+                        a tu proceso de diseño, ayudándote a poner foco en la solución y no en la construcción visual de
+                        elementos, solo tendrás que arrastrar piezas a tu composición y listo.
+
+                        Un UI·KIT siempre debe estar en constante crecimiento según las necesidades del producto, por lo
+                        que siempre está sometido a un proceso iterativo constante. Además es una de las partes
+                        fundamentales al momento de crear un Design System.
+
+                        <h3>Beneficios de utilizar un UIKIT</h3>
+                        <ol>
+                            <li>
+                                Agiliza parte del proceso de diseño
+                                ¡Nos brinda velocidad! Preocúpate en pensar la solución al problema no en pintar
+                                pantallas. Solo
+                                tendrás que arrastrar módulos a tu composición y crearás pantallas en minutos.
+                            </li>
+
+                            <li>
+                                Adiós a las inconsistencias entre pantallas
+                                No hay nada peor que inconsistencias visuales y cognitivas. Desafortunadamente este
+                                escenario es
+                                común cuando todo el equipo de diseño está trabajando en diferentes flujos de un
+                                producto
+                                sin un
+                                UIKIT que le sirva como fuente de la verdad. El resultado puede ser un dolor de cabeza
+                                que
+                                va
+                                desde algo tan simple como variantes de un mismo color de botón (y por consecuencia en
+                                el
+                                código) entre pantallas o alteraciones en un componente.
+                            </li>
+                            <li>
+                                Es una fuente de la verdad
+                                Es un lenguaje común sobre el cual trabajar y ayuda a conseguir alineación entre las
+                                partes
+                                involucradas en el diseño de un producto.
+                            </li>
+                            <li>
+                                Una verdadera fuente de aprendizaje
+                                Crear un UIKIT requiere de colaboración e intercambio de conocimientos que nutre mucho
+                                al
+                                equipo
+                                de trabajo involucrado. Además es una oportunidad genial para diseñadores con menos
+                                experiencia
+                                en aprender a construir módulos y por consiguiente entender cómo se construye una buena
+                                UI.
+                            </li>
+                            <li>
+                                Es de gran utilidad para personas nuevas en el equipo de diseño
+                                Con reglas claras y componentes listos para su uso es mucho más fácil entender
+                                rápidamente
+                                cómo
+                                diseñar, la curva de aprendizaje se reduce considerablemente.
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="http://www.rubenalcaraz.es/pinakes/wp-content/uploads/2013/09/foundation.jpg"
+                        alt="foundation">
+                    <div>
+                        Foundation es un framework de interfaz de usuario responsive. Foundation proporciona una
+                        cuadrícula responsive e incluye componentes de interfaz de usuario HTML y CSS, plantillas, y
+                        fragmentos de código, incluyendo tipografía, formularios, botones, barras de navegación y otros
+                        componentes de interfaz usuario, así como extensiones de JavaScript opcionales. Foundation está
+                        mantenida por zurb.com y es un proyecto de código abierto. <br>
+                        Foundation fue diseñado para y probado en numerosos dispositivos y navegadores. Es el primer
+                        framework mobile first responsive construido con Sass/SCSS dando buenas prácticas a diseñadores
+                        para el desarrollo rápido. El framework incluye los patrones necesarios más comunes para
+                        rápidamente maquetar un sitio responsive. A través del uso de Sass mixins, los componentes de
+                        Foundation son fácilmente estilizados y sencillos de extender.
+
+                        Desde la versión 2.0 también soporta el diseño responsive.4​ Esto significa el diseño gráfico de
+                        las páginas webs se ajusta dinámicamente, teniendo en cuenta las características del dispositivo
+                        utilizado (PC, tableta, teléfono celular). Además, desde 4.0 ha tomado un enfoque mobile-first,
+                        diseñando y desarrollando para dispositivos móviles primero, y mejorando las páginas web y
+                        aplicaciones para pantallas más grandes.5​
+
+                        Foundation es código abierto y está disponible en Github. Los desarrolladores están animados
+                        para participar en el proyecto y hacer sus contribuciones propias a la plataforma.
+
+                        <h3>Estructura y función</h3>
+                        Foundation es modular y consiste esencialmente en una serie de hojas de estilo Sass que
+                        implementan los distintos componentes de la caja de herramientas. Las hojas de estilo de
+                        componentes pueden ser incluidas a través de Sass o mediante la personalización de la descarga
+                        inicial de Foundation. Los desarrolladores pueden adaptar el archivo de Foundation en sí,
+                        seleccionando los componentes que se desean utilizar en su proyecto.
+
+                        Los ajustes son posibles a través de una hoja de estilos central de configuración. Cambios más
+                        profundos son posibles modificando las variables de Sass.
+
+                        El uso del lenguaje de las hojas de estilo Sass permite el uso de variables, funciones y
+                        operadores, selectores anidados, así como los llamados mixins.
+
+                        Desde la versión 3.0, la configuración de Foundation también tiene una opción especial
+                        "Personaliza" en la documentación. Además, los desarrolladores utilizan un formulario para
+                        elegir los componentes deseados y ajustar, si fuera necesario, los valores de las distintas
+                        opciones a sus necesidades. El paquete posteriormente generado ya incluye la hoja de estilos CSS
+                        preconstruida.
+
+                        <h3>Sistema de cuadrícula y diseño responsive</h3>
+                        Foundation viene por defecto con un diseño de cuadrícula flexible de 940 píxeles de ancho. El
+                        conjunto de herramientas es totalmente responsive permitiendo hacer uso de diferentes
+                        resoluciones y tipos de dispositivos: teléfonos móviles, formato vertical y horizontal, tabletas
+                        y PC con una resolución baja y alta (pantalla ancha). Esto ajusta la anchura de las columnas
+                        automáticamente.
+
+                        <h3>Entender la hoja de estilos CSS</h3>
+                        Fundation ofrece un conjunto de hojas de estilo que proporcionan definiciones de estilo básicas
+                        para todos los componentes HTML clave. Estos proporcionan un navegador y todo un sistema
+                        uniforme, aspecto moderno para el formato de textos, tablas y elementos de formulario.
+
+                        <h3>Componentes reutilizables</h3>
+                        Además de los elementos HTML regulares, Fundation tiene otros elementos comunes de interfaz.
+                        Estos incluyen botones con funciones avanzadas (por ejemplo, agrupación de botones o botones con
+                        opción desplegable, listas de navegación y make lists, pestañas horizontales y verticales, la
+                        navegación, ruta de navegación, la paginación, etc.), etiquetas, capacidades tipográficas
+                        avanzadas y formato para los mensajes tales como advertencias.
+
+                        <h3>Componentes de Javascript y plugins</h3>
+                        Los componentes de JavaScript de Foundation 4 fueron trasladados desde la biblioteca de
+                        Javascript jQuery a Zepto, en una presunción de que esta alternativa físicamente más pequeña,
+                        pero compatible con la API de jQuery resultaría más rápida para el usuario. Sin embargo,
+                        Foundation 5 se trasladó de nuevo a la más reciente versión de JQuery-2. "jQuery 2.x tiene la
+                        misma API como jQuery 1.x, pero no es compatible con Internet Explorer 6, 7 u 8." el blog
+                        oficial Zurb explica, ¿Por qué dejamos caer Zepto?; y el escritor sin firma alega que el cambio
+                        hacia atrás se debió a problemas de compatibilidad con los esfuerzos personalizados; y que se
+                        encontró que el rendimiento en realidad no es tan bueno, en las pruebas de uso con el más
+                        reciente jQuery-2.
+
+                        Los componentes Foundation jQuery proporcionan elementos de interfaz de usuario generales y
+                        extensiones de marca. La lista incluye: cuadro de diálogos, tooltips, carruseles, alertas,
+                        clearing, cookies, listas desplegables, formularios, joyride, magellan, órbita, placeholder,
+                        reveal, sección, barra superior, vídeos flexibles, y muchos otros.
+
+                        Los plug-ins que utilizan jQuery puede ser instalados incorporándose en el framework Foundation
+                        para proporcionar funcionalidad avanzada en cualquier área de interfaz de usuario, incluyendo la
+                        animación y elementos "offcanvas" como menús deslizables.
+
+                        Elementos JQuery como formularios tendrán que ser conectados a una infraestructura de backend
+                        (base de datos y scripts basados en servidor), utilizando herramientas y métodos fuera del
+                        framework Foundation con el fin de trabajar. Servicios externos como Mailchip todavía se
+                        instalan para cualquier página HTML estática, y no requieren de un home-rolled backend.
+
+                        JQuery se ha convertido en una componente estándar reconocido de la evolución de la web.
+                        Wikipedia afirma que el 65% de los top 100 sitios de Javascript emplean la misma. Sí Javascript
+                        se considera el estándar para el trabajo de desarrollo frontend web, con HTML y CSS (por
+                        consenso general.)
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p>
+            Tomado de: <br>
+            Celaya Luna, A. (2014). Creación de páginas web: HTML 5. Málaga, Spain: Editorial ICB. Recuperado de <br>
+            <a href="https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/56045?page=19."
+                target="_blank">https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/56045?page=19.</a>
+        </p>
+    </article>
+    <div>
+        <h1>Mockup</h1>
+        <img class="mockup" src="https://i.im.ge/2022/09/16/1utxir.MockUp-Edward-Laiton.png" alt="mockup">
+    </div>
+    <footer>
+        <label for="correo">Email</label>
+        <a href="#">elaitonz@unadvirtual.edu.co</a>
+        <label for="Skype">Skype</label>
+        <a href="#">live:edwlz</a>
+        <label for="actualizacion">Ultima Actualización: </label>
+        <input type="datetime-local">
+    </footer>
+</body>
+
+</html>

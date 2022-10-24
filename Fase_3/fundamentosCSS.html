@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos CSS</title>
+    <link rel="stylesheet" href="/Fase_3/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="flex">
+                <div class="titulo">
+                    <h1> Fundamentos de CSS </h1>
+                </div>
+                <div>
+                    <img class="unad"
+                        src="https://www.himss.org/sites/hde/files/styles/f2f_sponsor_full_logo_xs_sm/public/media/image/2021/09/17/logo-unad-web.png?itok=LdK63klM"
+                        alt="">
+                </div>
+            </div>
+            <div class="clear_fix"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/Fase_3/index.html">Inicio</a></li>
+                    <select class="option" name="temas" id="temas">
+                        <option value="titulo">Selecciona un Tema</option>
+                        <option value="/Fase_3/fundamentosCSS.html">Fundamentos CSS</option>
+                        <option value="/Fase_3/frameworksCSS.html">Frameworks de CSS</option>
+                    </select>
+                    <select class="option" name="recursosDigitales" id="recursos">
+                        <option value="titulo">Recursos Digitales</option>
+                        <option value="/Fase_3/recursos.html">Recurso 1</option>
+                        <option value="/Fase_3/recursos_2.html">Recurso 2</option>
+                    </select>
+                    <select class="option" name="aprendizaje" id="aprendizaje">
+                        <option value="titulo">Aprendizaje</option>
+                        <option value="activiad_1">Actividad 1</option>
+                        <option value="activiada_2">Actividad 2</option>
+                    </select>
+                    <select class="option" name="autor" id="autor">
+                        <option value="acerca">Acerca de</option>
+                        <option value="autor">Edward Laiton Zarate</option>
+                    </select>
+                </ul>
+            </nav>
+            <article class="proposito">
+                <div>
+                    <h2>Definamos que es CSS</h2>
+                    <div>
+                        <p class="par centrado">
+                            CSS son las siglas en inglés para «hojas de estilo en cascada» (Cascading Style Sheets).
+                            Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es
+                            decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se
+                            encarga del contenido básico de las páginas.
+
+                            Se les denomina hojas de estilo «en cascada» porque puedes tener varias hojas y una de ellas
+                            con las propiedades heredadas (o «en cascada») de otras.
+
+                            Para muchas personas una simple plantilla de blog es suficiente. Aun así, cuando quieras
+                            personalizar la apariencia de un sitio necesitarás implementar CSS que, en conjunto con un
+                            buen CMS, te ayudará a potenciar el alcance de tu contenido.
+                        </p>
+                        <div>
+                            <img class="img_2 centrado"
+                                src="https://cursoswp.educacion.navarra.es/cursowp2018/wp-content/uploads/2018/03/codigo-css.jpg"
+                                alt="codigo">
+                        </div>
+                        <ul class="par centrado">
+                            <li>CSS significa hojas de estilo en cascada.</li>
+                            <li>CSS describe cómo se deben mostrar los elementos HTML en la pantalla, el papel o en
+                                otros medios.</li>
+                            <li>CSS ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez.</li>
+                            <li>Las hojas de estilo externas se almacenan en archivos CSS.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="proposito">
+                <div>
+                    <h2>Sintaxis</h2>
+                    <p class="par centrado">
+                        Una regla CSS consta de un selector y un bloque de declaración.
+                    </p>
+                    <div>
+                        <img class="centrado"
+                            src="https://www.exasoluciones.com/imagenes/tutoriales/css3/sintaxis-css.png"
+                            alt="sintaxis">
+                    </div>
+                    <div>
+                        <ul class="par centrado">
+                            <li>El selector apunta al elemento HTML que desea diseñar.</li>
+                            <li>El bloque de declaración contiene una o más declaraciones separadas por punto y coma.
+                            </li>
+                            <li>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos
+                                puntos.</li>
+                            <li>Varias declaraciones CSS se separan con punto y coma, y ​​los bloques de declaración
+                                están rodeados por llaves.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="proposito">
+                <div>
+                    <h2>Selectores CSS</h2>
+                    <div>
+                        <p class="par centrado">
+                            Un selector de CSS selecciona los elementos HTML que desea diseñar. Los selectores de CSS se
+                            utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar.
+                            Podemos dividir los selectores de CSS en cinco categorías:
+                        </p>
+                        <ol class="par centrado">
+                            <li>Selectores simples (seleccionar elementos basados ​​en nombre, id, clase)</li>
+                            <li>Selectores combinadores (seleccionar elementos en función de una relación específica
+                                entre ellos)</li>
+                            <li>Selectores de pseudoclase (seleccionar elementos en función de un determinado estado)
+                            </li>
+                            <li>Selectores de pseudoelementos (seleccionar y diseñar una parte de un elemento)</li>
+                            <li>Selectores de atributos (seleccionar elementos en función de un atributo o valor de
+                                atributo)</li>
+                        </ol>
+                        <div>
+                            <img class="img_4 centrado"
+                                src="https://1.bp.blogspot.com/-Qaf7dSZEHDg/WwM-uxtyuUI/AAAAAAAAAbc/lM4nZJgJpC4QZ6QAI2XxEU06f5la7zeRgCLcBGAs/s1600/evitar-uso-important-CSS---sobreescribir-important.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div id="posts">
+                <article class="post">
+                    <h2>Selector por Clase</h2>
+                    <p class="par centrado">
+                        El selector de clase selecciona elementos HTML con un atributo de clase específico.
+                        Para seleccionar elementos con una clase específica, escriba un carácter de punto (.),
+                        seguido del nombre de la clase.
+                    </p>
+                    <p>
+                        <span class="ejemplo_1">
+                            <span style="color: blue; font-weight: 800;"> .arg_1 </span> {
+                            <span style="color: red;"> text-align </span>: center;
+                            <span style="color: red;"> color </span> : red;
+                            }</span>
+                    </p>
+                    <p class="par centrado">
+                        En este ejemplo, todos los elementos HTML con <em style="color: blue; font-weight: 800;">
+                            class = " arg_1 " </em> estarán en rojo y alineados al centro:
+                    </p>
+                    <p class="par centrado">
+                        También puede especificar que solo los elementos HTML específicos se vean afectados por una
+                        clase.
+                    </p>
+                    <p>
+                        <span class="ejemplo_2">
+                            <span style="color: blue; font-weight: 800;"> p .arg_1 </span> {
+                            <span style="color: red;"> text-align </span>: center;
+                            <span style="color: red;"> color </span> : red;
+                            }</span>
+                    </p>
+                    <p class="par centrado">
+                        En este ejemplo, solo los elementos <em style="color: blue; font-weight: 800;">
+                            < p>
+                        </em> con
+                        <em style="color: blue; font-weight: 800;"> class = " arg_1 " </em> estarán en rojo y alineados
+                        al centro
+                    </p>
+                    <p class="par centrado">
+                        Los elementos HTML también pueden referirse a más de una clase.
+                    </p>
+                    <p>
+                        <span class="ejemplo_2">
+                            <span style="color: blue; font-weight: 800;">
+                                < p class=" center arg_1 ">
+                                    < /p>
+                            </span>
+                    </p>
+                    <p class="par centrado">
+                        En este ejemplo, el elemento <em style="color: blue; font-weight: 800;">
+                            < p>
+                        </em> se diseñará de acuerdo con <em style="color: blue; font-weight: 800;"> class = " center "
+                        </em> y <em style="color: blue; font-weight: 800;"> class = " arg_1 " </em>
+                    </p>
+                </article>
+                <article class="post">
+                    <h2>Selector por ID</h2>
+                    <p class="par centrado">
+                        El selector de ID usa el atributo ID de un elemento HTML para seleccionar un elemento
+                        específico.
+                        La identificación de un elemento es única dentro de una página, por lo que el selector de
+                        identificación se usa para seleccionar un elemento único.
+                        Para seleccionar un elemento con una identificación específica, escriba un carácter hash
+                        (#), seguido de la identificación del elemento.
+                    </p>
+                    <p>
+                        <span class="ejemplo_1">
+                            <span style="color: blue; font-weight: 800;"> #col_1 </span> {
+                            <span style="color: red;"> text-align </span>: center;
+                            <span style="color: red;"> color </span> : red;
+                            }</span>
+                    </p>
+                    <p class="par centrado">
+                        En el ejemplo anterior la regla CSS se aplicará al elemento HTML con <em
+                            style="color: blue; font-weight: 800;">id = " col_1 "</em>.
+                    </p>
+                </article>
+                <article class="post">
+                    <div>
+                        <h2>Selector por Atributo</h2>
+                        <p class="par centrado">
+                            El selector de atributos selecciona elementos HTML en función del nombre del atributo.
+                        </p>
+                        <p>
+                            <span class="ejemplo">
+                                <span style="color: blue; font-weight: 800;"> p </span> {
+                                <span style="color: red;"> text-align </span>: center;
+                                <span style="color: red;"> color </span> : red;
+                                }</span>
+                        </p>
+                        <p class="par centrado">
+                            Aquí, todos los elementos <em style="color: blue; font-weight: 800;">p </em> en la
+                            página
+                            estarán alineados al centro, con un color de texto rojo:
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div id="posts_1">
+                <article class="post">
+                    <div>
+                        <h2>Selector Universal</h2>
+                        <p class="par centrado">
+                            El selector universal (*) selecciona todos los elementos HTML de la página.
+                        </p>
+                        <p>
+                            <span class="ejemplo">
+                                <span style="color: blue; font-weight: 800;"> * </span> {
+                                <span style="color: red;"> text-align </span>: center;
+                                <span style="color: red;"> color </span> : red;
+                                }</span>
+                        </p>
+                        <p class="par centrado">
+                            Aquí, todos los elementos <em style="color: blue; font-weight: 800;"> en la
+                                página </em> estarán alineados al centro, con un color de texto rojo:
+                        </p>
+                    </div>
+                </article>
+                <article class="post">
+                    <div>
+                        <h2>Selector de Agrupación</h2>
+                        <p class="par centrado">
+                            El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de
+                            estilo.
+                            Mire el siguiente código CSS (los elementos h1, h2 y p tienen las mismas definiciones de
+                            estilo).
+                        </p>
+                        <p>
+                            <span class="ejemplo">
+                                <span style="color: blue; font-weight: 800;"> h1 </span> {
+                                <span style="color: red;"> text-align </span>: center;
+                                <span style="color: red;"> color </span> : red;
+                                }</span>
+                        </p>
+                        <p>
+                            <span class="ejemplo">
+                                <span style="color: blue; font-weight: 800;"> h2 </span> {
+                                <span style="color: red;"> text-align </span>: center;
+                                <span style="color: red;"> color </span> : red;
+                                }</span>
+                        </p>
+                        <p>
+                            <span class="ejemplo">
+                                <span style="color: blue; font-weight: 800;"> p </span> {
+                                <span style="color: red;"> text-align </span>: center;
+                                <span style="color: red;"> color </span> : red;
+                                }</span>
+                        </p>
+                        <p class="par centrado">
+                            Será mejor agrupar los selectores, para minimizar el código.
+                            Para agrupar selectores, separe cada selector con una coma.
+                        </p>
+                        <p>
+                            <span class="ejemplo">
+                                <span style="color: blue; font-weight: 800;"> h1, h2, p </span> {
+                                <span style="color: red;"> text-align </span>: center;
+                                <span style="color: red;"> color </span> : red;
+                                }</span>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="proposito_1">
+                <article class="post">
+                    <div>
+                        <h2>Como Agregar CSS a nuestros trabajos</h2>
+                        <p class="par centrado">
+                            Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
+                            información de la hoja de estilo. Hay tres formas de insertar una hoja de estilo:
+                        </p>
+                        <p>
+                        <ul class="par centrado">
+                            <li>CSS externo</li>
+                            <li>CSS interno</li>
+                            <li>CSS en linea</li>
+                        </ul>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div id="posts">
+                <article class="post">
+                    <h2>CSS Externo</h2>
+                    <p class="par centrado">
+                        Con una hoja de estilo externa, puede cambiar la apariencia de un sitio web completo cambiando
+                        solo un archivo.
+                        Cada página HTML debe incluir una referencia al archivo de hoja de estilo externo dentro del
+                        elemento
+                        <em style="color: red
+                       ;">
+                            < link >
+                        </em> , dentro de la sección <em style="color: red;"> head </em> .
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> !DOCTYPE </span> <span
+                                        style="color: red;"> html </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> html </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color:rgb(141, 104, 1);"> head </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo_2">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> link </span> <span style="color: red;">
+                                        rel="stylesheet" href="mystyle.css" </span> <span style="color: blue;"> >
+                                    </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color:rgb(141, 104, 1);"> head </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p class="par centrado">
+                        Una hoja de estilo externa se puede escribir en cualquier editor de texto y debe guardarse con
+                        una extensión <em style="color: red;"> .css </em> .
+                        El archivo <em style="color: red;"> .css </em> externo no debe contener ninguna etiqueta HTML.
+                    </p>
+                </article>
+                <article class="post">
+                    <h2>CSS Interno</h2>
+                    <p class="par centrado">
+                        Se puede usar una hoja de estilo interna si una sola página HTML tiene un estilo único.
+                        El estilo interno se define dentro del elemento <em style="color: red;"> style </em> dentro de
+                        la sección de <em style="color: red;"> head </em> .
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> !DOCTYPE </span> <span
+                                        style="color: red;"> html </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> html </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> head </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color:rgb(141, 104, 1);"> style </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                body </span><span style="color: rgb(141, 104, 1);"> { </span> <span style="color: red;">
+                                background-color: </span> <span style="color: blue;"> linen; }
+                            </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> style </span> <span
+                                        style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color:rgb(141, 104, 1);"> head </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p class="par centrado">
+                        Los estilos internos se definen dentro del elemento <em style="color: red;"> style </em> ,dentro
+                        de la sección <em style="color: red;"> head </em> de una página HTML
+                    </p>
+                </article>
+                <article class="post">
+                    <h2>CSS en Linea</h2>
+                    <p class="par centrado">
+                        Se puede usar un estilo en línea para aplicar un estilo único a un solo elemento.
+                        Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de
+                        estilo puede contener cualquier propiedad CSS.
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> !DOCTYPE </span> <span
+                                        style="color: red;"> html </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color: rgb(141, 104, 1);"> html </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < </span><span style="color:rgb(141, 104, 1);"> body </span> <span style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo_2">
+                            <span style="color: blue;">
+                                < h1 </span><span style="color: rgb(141, 104, 1);"> style = </span> <span
+                                        style="color: red;">
+                                        " background-color: </span> <span style="color: blue;"> linen ; " >
+                                    </span>
+                    </p>
+                    <p>
+                        <span class="ejemplo">
+                            <span style="color: blue;">
+                                < / </span><span style="color: rgb(141, 104, 1);"> body </span> <span
+                                        style="color: red;">
+                                    </span> <span style="color: blue;"> > </span>
+                    </p>
+                    <p class="par centrado">
+                        Los estilos en línea se definen dentro del atributo <em style="color: red;"> style </em> del
+                        elemento relevante.
+                    </p>
+                </article>
+            </div>
+            <div class="proposito_1">
+                <article class="post">
+                    <div>
+                        <h2>Orden en cascada</h2>
+                        <p class="par centrado">
+                            ¿Qué estilo se utilizará cuando haya más de un estilo especificado para un elemento
+                            HTML?<br>
+                            Todos los estilos en una página "caerán en cascada" en una nueva hoja de estilo "virtual"
+                            según las siguientes reglas, donde el número uno tiene la prioridad más alta:
+                            Estilo en línea (dentro de un elemento HTML)
+                            Hojas de estilo externas e internas (en la sección de cabecera)
+                            predeterminado del navegador
+                            Por lo tanto, un estilo en línea tiene la prioridad más alta y anulará los estilos externos
+                            e internos y los valores predeterminados del navegador.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="proposito_1">
+                <article class="post">
+                    <div>
+                        <h2>Referencias</h2>
+                        <p class="par centrado">
+                            W3Schools.(2022).CSS Tutorial.CSS is the language we use to style a Web page. <br>
+                            <a href="https://www.w3schools.com/css/css_intro.asp">https://www.w3schools.com/css/css_intro.asp</a>
+
+                        </p>
+                        <p class="par centrado">
+                            Colaboradores de MDN.(2005 – 2022).Referencia CSS.Sintaxis de reglas básicas. <br>
+                            <a href="https://devdocs.io/css/">https://devdocs.io/css/</a>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div>
+            <article class="post">
+               
+            </article>
+        </div>
+    </header>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#temas').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+    $(function () {
+        $('#recursos').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+</script>
+
+</html>

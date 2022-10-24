@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3</title>
+    <link rel="stylesheet" href="/Fase_3/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="flex">
+                <div class="titulo">
+                    <h1> Fundamentos de CSS, Frameworks CSS</h1>
+                </div>
+                <div>
+                    <img class="unad"
+                        src="https://www.himss.org/sites/hde/files/styles/f2f_sponsor_full_logo_xs_sm/public/media/image/2021/09/17/logo-unad-web.png?itok=LdK63klM"
+                        alt="">
+                </div>
+            </div>
+            <div class="clear_fix"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/Fase_3/index.html">Inicio</a></li>
+                    <select class="option" name="temas" id="temas">
+                        <option value="titulo">Selecciona un Tema</option>
+                        <option value="/Fase_3/fundamentosCSS.html">Fundamentos CSS</option>
+                        <option value="/Fase_3/frameworksCSS.html">Frameworks CSS</option>
+                    </select>
+                    <select class="option" name="recursos" id="recursos">
+                        <option value="titulo">Recursos Digitales</option>
+                        <option value="/Fase_3/recursos.html">Recurso 1</option>
+                        <option value="/Fase_3/recursos_2.html">Recurso 2</option>
+                    </select>
+                    <select class="option" name="aprendizaje" id="aprendizaje">
+                        <option value="titulo">Aprendizaje</option>
+                        <option value="activiad_1">Actividad 1</option>
+                        <option value="activiada_2">Actividad 2</option>
+                    </select>
+                    <select class="option" name="autor" id="autor">
+                        <option value="acerca">Acerca de</option>
+                        <option value="autor">Edward Laiton Zarate</option>
+                    </select>
+                </ul>
+            </nav>
+            <article class="proposito">
+                <div>
+                    <h2>Propósito del Sitio</h2>
+                    <p class="par centrado">Esta pagina esta pensada como un recurso para conocer cuales son las
+                        caracteristicas básicas de
+                        <em>CSS</em>
+                        en su sintaxix y de como aplicarlas a un documento <em>HTML</em> con sus diferentes selectores y
+                        recursos.
+                        Tambien veremos los <em>Frameworks</em> más usados de <em>CSS</em> y sus aplicaciones.
+                    </p>
+                </div>
+            </article>
+            <div id="posts">
+                <article class="post">
+                    <div>
+                        <h2>Fundamentos de CSS (Cascading Style Sheets)</h2>
+                        <p class="par centrado">Es un lenguaje de programación muy parecido a HTML que permite aplicar
+                            estilos a los
+                            distintos elementos de
+                            las páginas web, de modo que
+                            los títulos, listas y párrafos pueden verse igual en todas y cada una de las páginas.
+                        <h3>Sintáxix Básica de CSS</h3>
+                        Cada estilo CSS se compone de tres partes:
+                        <ol class="par centrado">
+                            <li>Un selector</li>
+                            <li>Una propiedad</li>
+                            <li>Un valor</li>
+                        </ol>
+                        <div class="select">
+                            <h3>Selector</h3>
+                            <div>
+                                <p class="par centrado"> Indica a qué etiqueta HTML se aplicará el estilo.En este caso
+                                    estamos
+                                    seleccionando el body de la pagina</p>
+                            </div>
+                            <div class="select_1">
+                                <p>
+                                    body { }
+                                </p>
+                            </div>
+                            <div class="select">
+                                <h3>Propiedad</h3>
+                                <div>
+                                    <p class="par centrado">Indica a qué propiedad de la etiqueta se aplicará el estilo,
+                                        por
+                                        ejemplo al
+                                        color de
+                                        fondo, al tamaño de la letra, etc.En este ejemplo estamos cambiando el color de
+                                        fondo del body.</p>
+                                </div>
+                                <div class="select_1">
+                                    <p class="selector">
+                                        body { background-color : }
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="select">
+                                <h3>Valor</h3>
+                                <div>
+                                    <p class="par centrado"> Indica el valor de la propiedad estamos afectando. En el
+                                        ejemplo apreciamos que
+                                        le estamos asignando el color #FF0000</p>
+                                </div>
+                                <div class="select_1">
+                                    <p class="selector">
+                                        body { background-color :
+                                        #FF0000; }
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="/Fase_3/fundamentosCSS.html" class="button_more">Leer más</a>
+                        </div>
+                </article>
+                <article class="post">
+                    <div class="frameworks">
+                        <h2>Frameworks de CSS</h2>
+                        <div class="bootstrap">
+                            <div>
+                                <img class="img_1 centrado"
+                                    src="https://serv3.raiolanetworks.es/blog/wp-content/uploads/bootstrap-social-share.png"
+                                    alt="bootstrap">
+                            </div>
+                            <div>
+                                <p class="par centrado">Bootstrap es un framework CSS desarrollado por Twitter en 2010,
+                                    para estandarizar las
+                                    herramientas de la compañía.
+
+                                    Inicialmente, se llamó Twitter Blueprint y un poco más tarde, en 2011, se
+                                    transformó en
+                                    código
+                                    abierto y su nombre cambió para Bootstrap. Desde entonces fue actualizado varias
+                                    veces y
+                                    ya se
+                                    encuentra en la versión 4.4.
+
+                                    El framework combina CSS y JavaScript para estilizar los elementos de una página
+                                    HTML.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="uikit">
+                            <div>
+                                <img class="img_1 centrado"
+                                    src="https://cdn.dribbble.com/users/245331/screenshots/1974334/uikit.png"
+                                    alt="uikit">
+                            </div>
+                            <div>
+                                <p class="par centrado">
+                                    Es un repositorio de símbolos reutilizables que se utilizan para elaborar nuestras
+                                    interfaz (botones,
+                                    widgets, checkboxes, input fields, etc). Este paquete de elementos aporta una
+                                    rapidez increíble
+                                    a tu proceso de diseño, ayudándote a poner foco en la solución y no en la
+                                    construcción visual de
+                                    elementos, solo tendrás que arrastrar piezas a tu composición y listo.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="button_more">Leer más</a>
+                    </div>
+                </article>
+                <aside id="sidebar">
+                    <div id="about">
+                        <h2>Recursos Digitales</h2>
+                        <div style="margin-bottom: 30px;margin-top: 10px;" id="som-player" class="som-embed-player"
+                            data-id="c360DJVujdd">
+                            <script src="https://screencast-o-matic.com/player/appearance/c360DJVujdd"></script><iframe
+                                width=100% height=100% style="border:0;" scrolling="no"
+                                src="https://screencast-o-matic.com/player/c360DJVujdd?width=100%&height=100%&ff=1&title=0"
+                                allowfullscreen="true"></iframe>
+                        </div>
+                        <iframe width="328" height="215" src="https://www.youtube.com/embed/3yM5uXp-T_0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </aside>
+            </div>
+            <aside class="proposito_1">
+                <div class="timeline_twiter">
+                    <h2 style="text-align:center;margin-bottom: 20px;">Timeline Unad</h2>
+                    <div >
+                        <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by
+                            UniversidadUNAD</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#temas').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+    $(function () {
+        $('#recursos').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+</script>
+</html>
