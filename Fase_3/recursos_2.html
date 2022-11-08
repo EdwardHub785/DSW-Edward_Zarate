@@ -38,8 +38,8 @@
                     </select>
                     <select class="option" name="aprendizaje" id="aprendizaje">
                         <option value="titulo">Aprendizaje</option>
-                        <option value="activiad_1">Actividad 1</option>
-                        <option value="activiada_2">Actividad 2</option>
+                        <option value="../Fase_4/aprendizaje.html">Actividad 1</option>
+                        <option value="../Fase_4/aprendizaje_1.html">Actividad 2</option>
                     </select>
                     <select class="option" name="autor" id="autor">
                         <option value="acerca">Acerca de</option>
@@ -97,6 +97,15 @@
     });
     $(function () {
         $('#recursos').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+    $(function () {
+        $('#aprendizaje').on('change', function () {
             var url = $(this).val();
             if (url) {
                 window.location = url;

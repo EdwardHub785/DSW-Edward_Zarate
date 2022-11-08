@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Fundamentos CSS</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -38,8 +38,8 @@
                     </select>
                     <select class="option" name="aprendizaje" id="aprendizaje">
                         <option value="titulo">Aprendizaje</option>
-                        <option value="activiad_1">Actividad 1</option>
-                        <option value="activiada_2">Actividad 2</option>
+                        <option value="../Fase_4/aprendizaje.html">Actividad 1</option>
+                        <option value="../Fase_4/aprendizaje_1.html">Actividad 2</option>
                     </select>
                     <select class="option" name="autor" id="autor">
                         <option value="acerca">Acerca de</option>
@@ -127,6 +127,7 @@
                                 src="https://1.bp.blogspot.com/-Qaf7dSZEHDg/WwM-uxtyuUI/AAAAAAAAAbc/lM4nZJgJpC4QZ6QAI2XxEU06f5la7zeRgCLcBGAs/s1600/evitar-uso-important-CSS---sobreescribir-important.png"
                                 alt="">
                         </div>
+                        <br>
                     </div>
                 </div>
             </article>
@@ -516,6 +517,15 @@
     });
     $(function () {
         $('#recursos').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+    $(function () {
+        $('#aprendizaje').on('change', function () {
             var url = $(this).val();
             if (url) {
                 window.location = url;
