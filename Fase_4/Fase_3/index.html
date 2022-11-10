@@ -8,7 +8,6 @@
     <title>Fase 3</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
     <header>
         <div class="contenedor">
@@ -43,7 +42,7 @@
                     </select>
                     <select class="option" name="autor" id="autor">
                         <option value="acerca">Acerca de</option>
-                        <option value="autor">Edward Laiton Zarate</option>
+                        <option value="autor.html">Edward Laiton Zarate</option>
                     </select>
                 </ul>
             </nav>
@@ -222,6 +221,15 @@
     });
     $(function () {
         $('#aprendizaje').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
+    $(function () {
+        $('#autor').on('change', function () {
             var url = $(this).val();
             if (url) {
                 window.location = url;

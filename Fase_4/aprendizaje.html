@@ -45,7 +45,7 @@
                     </select>
                     <select class="option" name="autor" id="autor">
                         <option value="acerca">Acerca de</option>
-                        <option value="autor">Edward Laiton Zarate</option>
+                        <option value="../Fase_4/Fase_3/autor.html">Edward Laiton Zarate</option>
                     </select>
                 </ul>
             </nav>
@@ -90,6 +90,14 @@
             return false;
         });
     });
+    $(function () {
+        $('#autor').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+    });
 </script>
-
 </html>
