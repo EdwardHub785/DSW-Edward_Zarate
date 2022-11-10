@@ -303,6 +303,7 @@ h2,h3{
     padding: 15px !important;
     border-left: #052aa5 solid 5px;
     border-radius: 5px;
+    margin-left: 20px !important;
 }
 
 .ejemplo_1 {
@@ -311,6 +312,7 @@ h2,h3{
     border-left: #052aa5 solid 5px;
     border-radius: 5px;
     font-size: 14px;
+    margin-left: 20px !important;
     
 }
 
@@ -320,6 +322,7 @@ h2,h3{
     border-left: #052aa5 solid 5px;
     border-radius: 5px;
     font-size: 13px;
+    margin-left: 20px !important;
 }
 
 .scroll {
