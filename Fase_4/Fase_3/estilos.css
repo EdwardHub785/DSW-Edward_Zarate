@@ -329,7 +329,7 @@ h2,h3{
     display: block;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    box-shadow: 0px 0px 5x rgb(100, 4, 155);
+    box-shadow: 0px 0px 5px rgb(100, 4, 155);
     width: 85%;
     height: 170px;
     background-color: white;
